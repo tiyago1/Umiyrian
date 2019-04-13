@@ -12,5 +12,6 @@ public class UpLeftCommand : Command
     public override void Execute()
     {
         base.Execute();
+        mPlayerController.transform.position += new Vector3(-0.05f, 0.05f, 0.0f); 
     }
 }

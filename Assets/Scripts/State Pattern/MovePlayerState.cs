@@ -8,6 +8,8 @@ public class MovePlayerState : PlayerState
     private Dictionary<DirectionType, Command> mMoveCommands;
     private Coroutine mWaitCoroutine;
 
+    private bool mValidInputDetected;
+
     public MovePlayerState(PlayerController playerController) : base(playerController)
     {
         InitializeMoveCommands();
@@ -20,9 +22,18 @@ public class MovePlayerState : PlayerState
     }
     public override void Tick()
     {
-        //Debug.Log("Move");
+        mValidInputDetected =
+            (Input.GetKey(KeyCode.W) && !(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S))) ||
+            (Input.GetKey(KeyCode.A) && !(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))) ||
+            (Input.GetKey(KeyCode.D) && !(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A))) ||
+            (Input.GetKey(KeyCode.S) && !(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.W))) ||
+            (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) ||
+            (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A)) ||
+            (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) ||
+            (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
+            ;
 
-        if (Input.anyKey && !Input.GetMouseButton(0))
+        if (mValidInputDetected)
         {
             if (Input.GetKey(KeyCode.W) && !(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S)))
             {

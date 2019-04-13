@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class IdlePlayerState : PlayerState
 {
+    private bool mInvalidInputDetected;
+
     public IdlePlayerState(PlayerController playerController) : base(playerController)
     {
     }
@@ -20,14 +22,27 @@ public class IdlePlayerState : PlayerState
         }
 
         mPlayerController.Animator.SetBool("Move", false);
-        //throw new NotImplementedException();
     }
     public override void Tick()
     {
         //Debug.Log("Idle");
-        Idle(mPlayerController.CurrentPlayerDirection);
+        mInvalidInputDetected =
+            (Input.GetKey(KeyCode.W) && !(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S))) ||
+            (Input.GetKey(KeyCode.A) && !(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))) ||
+            (Input.GetKey(KeyCode.D) && !(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A))) ||
+            (Input.GetKey(KeyCode.S) && !(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.W))) ||
+            (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) ||
+            (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A)) ||
+            (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) ||
+            (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
+            ;
 
-        if (Input.anyKey && !Input.GetMouseButton(0))
+
+        if (!mInvalidInputDetected)
+        {
+            Idle(mPlayerController.CurrentPlayerDirection);
+        }
+        else
         {
             mPlayerController.SetPlayerState(new MovePlayerState(mPlayerController));
         }

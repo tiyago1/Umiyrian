@@ -17,8 +17,6 @@ public class PlayerController : MonoBehaviour // Instance olabilir heryere refer
     public Animator Animator;
     public DirectionType CurrentPlayerDirection;
 
-    public List<Sprite> test;
-
     [Header("Player States")]
     private PlayerState mCurrentPlayerState;
     [HideInInspector()] public MovePlayerState MovePlayerState;
@@ -28,17 +26,15 @@ public class PlayerController : MonoBehaviour // Instance olabilir heryere refer
     {
         InitPlayerStates();
         SetPlayerState(new IdlePlayerState(this));
-        test = new List<Sprite>();       
     }
 
     private void Update()
     {
         if (mCurrentPlayerState != null)
         {
+            Debug.Log(mCurrentPlayerState.GetType());
             mCurrentPlayerState.Tick();
         }
-
-        test.Add(this.GetComponent<SpriteRenderer>().sprite);
     }
 
     public void SetPlayerState(PlayerState playerState)

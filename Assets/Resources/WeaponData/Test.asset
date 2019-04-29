@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ad8aa9045ab3f499ea363c7bc421ae, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  Name: Bokoko
+  ShootType: 0
+  MagazineSize: 6
+  MaxAmmo: 1000
+  Damage: 5
+  Range: 5
+  FireRate: 5
+  ReloadTime: 5
+  Force: 5
+  Spread: 5
+  View: {fileID: 0}
+  Animator: {fileID: 0}
+  ProjectileObject: {fileID: 2615769942521667161, guid: 12a697eff9e94194c9a2e092ba96eeef,
+    type: 3}

@@ -3,14 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovePlayerState : PlayerState
+public class ActionPlayerState : PlayerState
 {
     private Dictionary<DirectionType, Command> mMoveCommands;
     private Coroutine mWaitCoroutine;
-
     private bool mValidInputDetected;
 
-    public MovePlayerState(PlayerController playerController) : base(playerController)
+    public ActionPlayerState(PlayerController playerController) : base(playerController)
     {
         InitializeMoveCommands();
     }
@@ -76,7 +75,6 @@ public class MovePlayerState : PlayerState
 
     public override void OnStateExit()
     {
-        //mPlayerController.Animator.ResetTrigger("Move_" + mPlayerController.CurrentPlayerDirection);
         WaitMoveInput(false);
     }
 
@@ -107,7 +105,9 @@ public class MovePlayerState : PlayerState
         yield return new WaitForEndOfFrame();
         yield return new WaitForEndOfFrame();
 
-        mPlayerController.SetPlayerState(new IdlePlayerState(mPlayerController));
+        ResetAnimationTrigger();
+        mPlayerController.Animator.SetBool("Move", false);
+        SetIdleAnimation(mPlayerController.CurrentPlayerDirection);
     }
 
     private void WaitMoveInput(bool isPlay)
@@ -126,4 +126,21 @@ public class MovePlayerState : PlayerState
             mWaitCoroutine = null;
         }
     }
+
+    private void ResetAnimationTrigger()
+    {
+        for (int i = 0; i < mPlayerController.Animator.parameters.Length; i++)
+        {
+            if (mPlayerController.Animator.parameters[i].type == AnimatorControllerParameterType.Trigger)
+            {
+                mPlayerController.Animator.ResetTrigger(mPlayerController.Animator.parameters[i].name);
+            }
+        }
+    }
+
+    private void SetIdleAnimation(DirectionType direction)
+    {
+        mPlayerController.Animator.SetTrigger("Idle_" + direction.ToString());
+    }
+
 }

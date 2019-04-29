@@ -16,16 +16,17 @@ public class PlayerController : MonoBehaviour // Instance olabilir heryere refer
 {
     public Animator Animator;
     public DirectionType CurrentPlayerDirection;
+    public WeaponController CurrentWeaponController;
 
     [Header("Player States")]
     private PlayerState mCurrentPlayerState;
-    [HideInInspector()] public MovePlayerState MovePlayerState;
-    [HideInInspector()] public IdlePlayerState IdlePlayerState;
+    [HideInInspector()] public ActionPlayerState ActionPlayerState;
 
     private void Start()
     {
         InitPlayerStates();
-        SetPlayerState(new IdlePlayerState(this));
+        InitCurrentWeapon();
+        SetPlayerState(new ActionPlayerState(this));
     }
 
     private void Update()
@@ -45,9 +46,15 @@ public class PlayerController : MonoBehaviour // Instance olabilir heryere refer
         mCurrentPlayerState = playerState;
         mCurrentPlayerState.OnStateEnter();
     }
+
     private void InitPlayerStates()
     {
-        MovePlayerState = new MovePlayerState(this);
-        IdlePlayerState = new IdlePlayerState(this);
+        ActionPlayerState = new ActionPlayerState(this);
+    }
+    
+    private void InitCurrentWeapon()
+    {
+        CurrentWeaponController = this.transform.GetChild(0).GetComponent<WeaponController>();
+        CurrentWeaponController.Init(true);
     }
 }

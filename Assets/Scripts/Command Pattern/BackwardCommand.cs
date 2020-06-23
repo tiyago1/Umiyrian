@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackwardCommand : Command
+public class BackwardCommand : MoveCommand
 {
     public BackwardCommand(DirectionType direction, PlayerController playerController) : base(direction, playerController)
     {

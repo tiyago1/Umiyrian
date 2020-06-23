@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ForwardCommand : Command
+public class ForwardCommand : MoveCommand
 {
     public ForwardCommand(DirectionType direction, PlayerController playerController) : base(direction, playerController)
     {

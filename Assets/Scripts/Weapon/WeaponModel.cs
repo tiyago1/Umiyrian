@@ -1,43 +1,71 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
-[System.Serializable]
-public class WeaponModel
-{
-    private int magazineSize;
 
+public enum ShootType
+{
+    Semiautomatic, //  Default olarak projectile atma
+    Beam, // Basılı tutarak ışın atma
+    Charged, // Basılı tutup bırakarak atma
+    Burst,
+    Automatic
+}
+[CreateAssetMenu(fileName = "Weapon",menuName = "Create Weapon", order = 51)]
+public class WeaponModel : ScriptableObject
+{
+    [SerializeField]
+    private Guid ID = new Guid();
+    [SerializeField]
+    private string Name;
+    [SerializeField]
+    private ShootType ShootType;
+    [SerializeField]
+    private int MagazineSize;
+    [SerializeField]
+    private int MaxAmmo;
+    [SerializeField]
+    private int Damage;
+    [SerializeField]
+    private float Range;
+    [SerializeField]
+    private float FireRate;
+    [SerializeField]
+    private float ReloadTime;
+    [SerializeField]
+    private int Force;
+    [SerializeField]
+    private int Spread;
+    [SerializeField]
+    private Sprite View;
+    [SerializeField]
+    private Animator Animator;
+    [SerializeField]
+    private GameObject ProjectileObject;
+
+    [Header("Events")]
     public EventHandler<EventArgs> OnMagazineSizeChanged;
 
-    public Guid ID;
-    public string Name;
-    public ShootType ShootType;
-    public int MagazineSize
+    public WeaponModel GetWeaponDataInstance()
     {
-        get
+        WeaponModel holder = new WeaponModel()
         {
-            return magazineSize;
-        }
-        set
-        {
-            if (magazineSize != value)
-            {
-                magazineSize = value;
-                if (OnMagazineSizeChanged != null)
-                {
-                    OnMagazineSizeChanged(this, new EventArgs());
-                }
-            }
-        }
+            ID               = this.ID,
+            Name             = this.Name,
+            ShootType        = this.ShootType,
+            MagazineSize     = this.MagazineSize,
+            MaxAmmo          = this.MaxAmmo,
+            Damage           = this.Damage,
+            Range            = this.Range,
+            FireRate         = this.FireRate,
+            ReloadTime       = this.ReloadTime,
+            Force            = this.Force,
+            Spread           = this.Spread,
+            View             = this.View,
+            Animator         = this.Animator,
+            ProjectileObject = this.ProjectileObject
+        };
+        
+        return holder;
     }
-    public int MaxAmmo;
-    public int Damage;
-    public float Range;
-    public float FireRate;
-    public float ReloadTime;
-    public int Force;
-    public int Spread;
-    public Sprite View;
-    public Animator Animator;
-    public GameObject ProjectileObject;
 }

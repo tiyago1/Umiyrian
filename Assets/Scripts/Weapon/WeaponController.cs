@@ -9,13 +9,11 @@ public class WeaponController : MonoBehaviour
     public WeaponModel Model;
     public bool IsPlayerWeapon; // Player classı falan gelebilir :D
 
-    public WeaponData Data; // Public olmasi tartisilir
-
     public void Init(bool isPlayerWeapon)
     {
-        Model = Data.GetWeaponDataInstance();
+        Model = Instantiate(Data);
         Model.OnMagazineSizeChanged += OnMagazineSizeChanged;
-        View.OnShootDetected += OnShootDetected;
+        View.OnShootInputDetected += OnShootDetected;
         View.Init(Model.ShootType, IsPlayerWeapon, Model.ProjectileObject);
     }
 

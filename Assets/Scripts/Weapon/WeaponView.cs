@@ -5,7 +5,7 @@ using UnityEngine;
 
 public abstract class WeaponView : MonoBehaviour
 {
-    public EventHandler<EventArgs> OnShootDetected;
+    public EventHandler<EventArgs> OnShootInputDetected;
     [SerializeField]
     protected ShootType mShootType;
     protected bool mIsPlayerWeapon;

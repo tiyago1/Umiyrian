@@ -5,13 +5,14 @@ using UnityEngine;
 
 public class ActionPlayerState : PlayerState
 {
-    private Dictionary<DirectionType, Command> mMoveCommands;
+    private Dictionary<DirectionType, MoveCommand> mMoveCommands;
+    private DashCommand mDashCommand;
     private Coroutine mWaitCoroutine;
     private bool mValidInputDetected;
 
     public ActionPlayerState(PlayerController playerController) : base(playerController)
     {
-        InitializeMoveCommands();
+        InitializeCommands();
     }
 
     public override void OnStateEnter()
@@ -29,7 +30,8 @@ public class ActionPlayerState : PlayerState
             (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) ||
             (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A)) ||
             (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) ||
-            (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
+            (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A)) ||
+            Input.GetKeyDown(KeyCode.LeftShift) // Dash
             ;
 
         if (mValidInputDetected)
@@ -66,6 +68,10 @@ public class ActionPlayerState : PlayerState
             {
                 Move(DirectionType.DownRight);
             }
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                mDashCommand.Execute();
+            }
         }
         else
         {
@@ -78,9 +84,10 @@ public class ActionPlayerState : PlayerState
         WaitMoveInput(false);
     }
 
-    private void InitializeMoveCommands()
+    private void InitializeCommands()
     {
-        mMoveCommands = new Dictionary<DirectionType, Command>()
+        mDashCommand = new DashCommand(mPlayerController.CurrentPlayerDirection, mPlayerController);
+        mMoveCommands = new Dictionary<DirectionType, MoveCommand>()
         {
             { DirectionType.UpLeft,    new UpLeftCommand     ( DirectionType.UpLeft,    mPlayerController) },
             { DirectionType.Forward,   new ForwardCommand    ( DirectionType.Forward,   mPlayerController) },
@@ -95,6 +102,7 @@ public class ActionPlayerState : PlayerState
 
     private void Move(DirectionType direction)
     {
+        mPlayerController.Animator.SetBool("isMove", true);
         WaitMoveInput(false);
         mMoveCommands[direction].Execute();
     }
@@ -105,9 +113,7 @@ public class ActionPlayerState : PlayerState
         yield return new WaitForEndOfFrame();
         yield return new WaitForEndOfFrame();
 
-        ResetAnimationTrigger();
-        mPlayerController.Animator.SetBool("Move", false);
-        SetIdleAnimation(mPlayerController.CurrentPlayerDirection);
+        mPlayerController.Animator.SetBool("isMove", false);
     }
 
     private void WaitMoveInput(bool isPlay)
@@ -126,21 +132,4 @@ public class ActionPlayerState : PlayerState
             mWaitCoroutine = null;
         }
     }
-
-    private void ResetAnimationTrigger()
-    {
-        for (int i = 0; i < mPlayerController.Animator.parameters.Length; i++)
-        {
-            if (mPlayerController.Animator.parameters[i].type == AnimatorControllerParameterType.Trigger)
-            {
-                mPlayerController.Animator.ResetTrigger(mPlayerController.Animator.parameters[i].name);
-            }
-        }
-    }
-
-    private void SetIdleAnimation(DirectionType direction)
-    {
-        mPlayerController.Animator.SetTrigger("Idle_" + direction.ToString());
-    }
-
 }

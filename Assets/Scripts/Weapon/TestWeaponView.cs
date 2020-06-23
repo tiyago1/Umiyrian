@@ -10,10 +10,7 @@ public class TestWeaponView : WeaponView
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (OnShootDetected != null)
-            {
-                OnShootDetected.Invoke(this, new EventArgs());
-            }
+            OnShootInputDetected?.Invoke(this, new EventArgs());
         }
     }
 

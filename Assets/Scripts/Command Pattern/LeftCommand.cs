@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LeftCommand : Command
+public class LeftCommand : MoveCommand
 {
     public LeftCommand(DirectionType direction, PlayerController playerController) : base(direction, playerController)
     {

@@ -6,16 +6,11 @@ using UnityEngine;
 public abstract class WeaponView : MonoBehaviour
 {
     public EventHandler<EventArgs> OnShootInputDetected;
-    [SerializeField]
-    protected ShootType mShootType;
-    protected bool mIsPlayerWeapon;
-    public GameObject ProjectileObject;
+    protected GameObject projectileObject;
 
-    public void Init(ShootType type, bool isPlayerWeapon, GameObject projectileObject)
+    public void Init(GameObject projectileObject)
     {
-        mShootType = type;
-        mIsPlayerWeapon = isPlayerWeapon;
-        ProjectileObject = projectileObject;
+        this.projectileObject = projectileObject;
     }
 
     public virtual void Update()
@@ -57,6 +52,6 @@ public abstract class WeaponView : MonoBehaviour
 
     public virtual void Shoot()
     {
-        Instantiate(ProjectileObject, this.transform.position, Quaternion.identity);
+        Instantiate(projectileObject, this.transform.position, Quaternion.identity);
     }
 }

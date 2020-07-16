@@ -14,34 +14,20 @@ public enum ShootType
 [CreateAssetMenu(fileName = "Weapon",menuName = "Create Weapon", order = 51)]
 public class WeaponModel : ScriptableObject
 {
-    [SerializeField]
-    private Guid ID = new Guid();
-    [SerializeField]
-    private string Name;
-    [SerializeField]
-    private ShootType ShootType;
-    [SerializeField]
-    private int MagazineSize;
-    [SerializeField]
-    private int MaxAmmo;
-    [SerializeField]
-    private int Damage;
-    [SerializeField]
-    private float Range;
-    [SerializeField]
-    private float FireRate;
-    [SerializeField]
-    private float ReloadTime;
-    [SerializeField]
-    private int Force;
-    [SerializeField]
-    private int Spread;
-    [SerializeField]
-    private Sprite View;
-    [SerializeField]
-    private Animator Animator;
-    [SerializeField]
-    private GameObject ProjectileObject;
+    public Guid ID = new Guid();
+    public string Name;
+    public ShootType ShootType;
+    public int MagazineSize;
+    public int MaxAmmo;
+    public int Damage;
+    public float Range;
+    public float FireRate;
+    public float ReloadTime;
+    public int Force;
+    public int Spread;
+    public Sprite View;
+    public Animator Animator;
+    public GameObject ProjectileObject;
 
     [Header("Events")]
     public EventHandler<EventArgs> OnMagazineSizeChanged;

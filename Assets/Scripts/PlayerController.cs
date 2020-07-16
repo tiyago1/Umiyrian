@@ -56,6 +56,6 @@ public class PlayerController : MonoBehaviour // Instance olabilir heryere refer
     private void InitCurrentWeapon()
     {
         CurrentWeaponController = this.transform.GetChild(0).GetComponent<WeaponController>();
-        CurrentWeaponController.Init(true);
+        CurrentWeaponController.Init();
     }
 }

@@ -93,22 +93,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24558a742a13fb141a0c9fe169e10707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIView: {fileID: 0}
   View: {fileID: 8968435988208350014}
-  Model:
-    Name: 
-    ShootType: 0
-    MaxAmmo: 0
-    Damage: 0
-    Range: 0
-    FireRate: 0
-    ReloadTime: 0
-    Force: 0
-    Spread: 0
-    View: {fileID: 0}
-    Animator: {fileID: 0}
-  IsPlayerWeapon: 0
-  Data: {fileID: 11400000, guid: 65eb3059ec5652b468edef15e4df5d94, type: 2}
+  Model: {fileID: 11400000, guid: 3cad8f79b4e43854dad72fb39afc322b, type: 2}
 --- !u!114 &8968435988208350014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,5 +107,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71f3433819bb6354eb25b9e02f618b83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mShootType: 3
-  Test: {fileID: 4083349085394740130, guid: fb62607d7bd84a24bab402bb7475e556, type: 3}

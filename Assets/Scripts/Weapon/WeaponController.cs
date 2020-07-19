@@ -23,6 +23,11 @@ public class WeaponController : MonoBehaviour
 
     private void OnShootDetected(object sender, EventArgs e)
     {
+        
+    }
+
+    public void Shoot()
+    {
         Model.MagazineSize--;
         View.Shoot();
     }

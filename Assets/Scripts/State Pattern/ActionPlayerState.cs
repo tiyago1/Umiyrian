@@ -20,6 +20,7 @@ public class ActionPlayerState : PlayerState
         mWaitCoroutine = null;
         WaitMoveInput(true);
     }
+
     public override void Tick()
     {
         mValidInputDetected =

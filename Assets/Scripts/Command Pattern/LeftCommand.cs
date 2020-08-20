@@ -12,6 +12,7 @@ public class LeftCommand : MoveCommand
     public override void Execute()
     {
         base.Execute();
-        mPlayerController.transform.position -= new Vector3(0.05f, 0.0f, 0.0f);
+        Vector2 newPosition = mPlayerController.GetPosition() + new Vector2(-speed, 0);
+        mPlayerController.rigidBody.MovePosition(newPosition);
     }
 }

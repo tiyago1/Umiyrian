@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using InControl;
+using System.Collections;
 using System.Collections.Generic;
 using Umiyrian.Inputs;
 using UnityEngine;
@@ -14,16 +15,22 @@ public enum DirectionType
     Backward,
     DownRight,
 }
-public class PlayerController : MonoBehaviour // Instance olabilir heryere referance
+public class PlayerController : MonoBehaviour, IMoveable // Instance olabilir heryere referance
 {
     public Animator Animator;
     public DirectionType CurrentPlayerDirection;
     public WeaponController CurrentWeaponController;
+    public Rigidbody2D rigidBody;
 
     [Header("Move Commands")]
     private Dictionary<DirectionType, MoveCommand> mMoveCommands;
     private DashCommand mDashCommand;
     private PlayerActions playerActions;
+
+    public GameObject crosshair;
+    public InControlInputModule incontrolInput;
+
+    public Vector2 GetPosition() => new Vector2(this.transform.position.x, this.transform.position.y);
 
     private void Start()
     {
@@ -46,36 +53,88 @@ public class PlayerController : MonoBehaviour // Instance olabilir heryere refer
         playerActions.Destroy();
     }
 
+
     private void Update()
+    {
+        Move();
+        Shoot();
+        Aim();
+        Dash();
+    }
+
+    private void Aim()
+    {
+        Vector2 value = Vector2.zero;
+        if (playerActions.Aim.LastInputType == BindingSourceType.MouseBindingSource)
+            value = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        else
+            value = playerActions.Aim.Vector;
+
+        Test(value, CurrentWeaponController.gameObject, 1.0f);
+        Test(value, crosshair.gameObject, 2.6f);
+        LookAtGamepad();
+    }
+
+    private void MouseAim()
+    {
+
+    }
+
+    private void GamepadAim()
+    {
+
+    }
+
+    private void Test(Vector3 mouseScreenPosition, GameObject gameObject, float range)
+    {
+        Vector3 aim = new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, 0) - this.transform.position;
+        aim.Normalize();
+        aim *= range;
+        gameObject.transform.localPosition = aim;
+    }
+
+    private void LookAtGamepad()
+    {
+        Vector2 distance = crosshair.transform.position - CurrentWeaponController.transform.position;
+        distance.Normalize();
+        float angle = Mathf.Atan2(distance.y, distance.x) * Mathf.Rad2Deg;
+        CurrentWeaponController.gameObject.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+    }
+
+
+    #region General Methods
+
+    private void Move()
     {
         if (playerActions.Move.IsPressed)
         {
             DirectionType direction = ConvertAngleToDirection(playerActions.Move.Angle);
-            Move(direction);
+            mMoveCommands[direction].Execute();
         }
         else
         {
             Animator.SetBool("isMove", false);
         }
-
-        if (playerActions.Shoot.IsPressed)
-        {
-            Shoot();
-        }
-
     }
-
-    #region General Methods
-
-    private void Move(DirectionType direction)
+    public void Move(float angle)
     {
-        Animator.SetBool("isMove", true);
+        DirectionType direction = ConvertAngleToDirection(playerActions.Move.Angle);
         mMoveCommands[direction].Execute();
     }
 
     private void Shoot()
     {
+        if (playerActions.Shoot.IsPressed)
+        {
+        }
+    }
 
+    private void Dash()
+    {
+        if (playerActions.Dash.IsPressed)
+        {
+            mDashCommand.Execute();
+        }
     }
 
     #endregion

@@ -1,5 +1,6 @@
 ﻿public abstract class MoveCommand : Command
 {
+    protected const float speed = 0.04f;
     public MoveCommand(DirectionType direction, PlayerController playerController) : base(direction, playerController)
     {
     }
@@ -11,6 +12,7 @@
         float x = 0;
         float y = 0;
         GetVector2ToDirection(ref x,  ref y);
+        mPlayerController.Animator.SetBool("isMove", true);
         mPlayerController.Animator.SetFloat("X", x);
         mPlayerController.Animator.SetFloat("Y", y);
         mPlayerController.CurrentPlayerDirection = mDirection;

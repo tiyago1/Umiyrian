@@ -11,6 +11,7 @@ namespace InControl
 	using System;
 	using System.Collections.Generic;
 	using UnityEngine;
+    using System.Linq;
 
 
 	public class TestInputManager : MonoBehaviour
@@ -32,37 +33,38 @@ namespace InControl
 
 			Logger.OnLogMessage += logMessage => logMessages.Add( logMessage );
 
-			// InputManager.HideDevicesWithProfile( typeof( UnityDeviceProfiles.Xbox360MacProfile ) );
+            // InputManager.HideDevicesWithProfile( typeof( UnityDeviceProfiles.Xbox360MacProfile ) );
 
-			InputManager.OnDeviceAttached += inputDevice => Debug.Log( "Attached: " + inputDevice.Name );
+
+            InputManager.OnDeviceAttached += inputDevice => Debug.Log( "Attached: " + inputDevice.Name );
 			InputManager.OnDeviceDetached += inputDevice => Debug.Log( "Detached: " + inputDevice.Name );
 			InputManager.OnActiveDeviceChanged += inputDevice => Debug.Log( "Active device changed to: " + inputDevice.Name );
 
 			InputManager.OnUpdate += HandleInputUpdate;
 
-			// UnityInputDeviceManager.DumpSystemDeviceProfiles();
-			// Debug.Log( JsonUtility.ToJson( InputDeviceProfile.CreateInstanceOfType( typeof(UnityDeviceProfiles.Xbox360MacUnityProfile) ), true ) );
-			// Debug.Log( VersionInfo.UnityVersion() );
+            // UnityInputDeviceManager.DumpSystemDeviceProfiles();
+            // Debug.Log( JsonUtility.ToJson( InputDeviceProfile.CreateInstanceOfType( typeof(UnityDeviceProfiles.Xbox360MacUnityProfile) ), true ) );
+            // Debug.Log( VersionInfo.UnityVersion() );
 
 #if UNITY_TVOS
 			// This turns off the A button being interpreted as Menu on controllers.
 			// See also:
 			// https://docs.unity3d.com/Manual/tvOS.html
 			// https://docs.unity3d.com/ScriptReference/tvOS.Remote-allowExitToHome.html
-			#if UNITY_2018_2_OR_NEWER
+#if UNITY_2018_2_OR_NEWER
 			UnityEngine.tvOS.Remote.allowExitToHome = false;
-			#else
+#else
 			UnityEngine.Apple.TV.Remote.allowExitToHome = false;
-			#endif
+#endif
 
 			// This enables swiping instead of a touch analog pad.
 			// See also:
 			// https://docs.unity3d.com/ScriptReference/tvOS.Remote-reportAbsoluteDpadValues.html
-			#if UNITY_2018_2_OR_NEWER
+#if UNITY_2018_2_OR_NEWER
 			UnityEngine.tvOS.Remote.reportAbsoluteDpadValues = false;
-			#else
+#else
 			UnityEngine.Apple.TV.Remote.reportAbsoluteDpadValues = false;
-			#endif
+#endif
 
 			// This detects whether the attached device is an Apple TV remote and then
 			// configures it to have an appropriate deadzone and state threshold for
@@ -79,7 +81,9 @@ namespace InControl
 				}
 			};
 #endif
-		}
+
+
+        }
 
 
 		void HandleInputUpdate( ulong updateTick, float deltaTime )

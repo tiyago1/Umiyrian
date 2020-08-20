@@ -2,7 +2,7 @@
 
 public class DashCommand : Command
 {
-    private float mDashValue = 1.0f;
+    private float mDashValue = 0.085f;
 
     public DashCommand(DirectionType direction, PlayerController playerController) : base(direction, playerController)
     {
@@ -12,13 +12,14 @@ public class DashCommand : Command
     public override void Execute()
     {
         base.Execute();
-        Vector3 dashDistance = DirectionToVector2(mPlayerController.CurrentPlayerDirection);
-        mPlayerController.transform.position += dashDistance;
+        Vector2 dashDistance = DirectionToVector2(mPlayerController.CurrentPlayerDirection);
+        Vector2 newPosition = mPlayerController.GetPosition() + dashDistance;
+        mPlayerController.rigidBody.MovePosition(newPosition);
+
     }
 
     private Vector2 DirectionToVector2(DirectionType type)
     {
-        Debug.Log(type.ToString());
         Vector2 direction = Vector2.zero;
         switch (type)
         {

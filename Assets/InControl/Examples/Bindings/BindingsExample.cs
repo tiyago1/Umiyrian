@@ -37,8 +37,10 @@ namespace BindingsExample
 
 		void Update()
 		{
-			transform.Rotate( Vector3.down, 500.0f * Time.deltaTime * playerActions.Move.X, Space.World );
-			transform.Rotate( Vector3.right, 500.0f * Time.deltaTime * playerActions.Move.Y, Space.World );
+            transform.Rotate(Vector3.down, 500.0f * Time.deltaTime * playerActions.Move.X, Space.World);
+            transform.Rotate(Vector3.right, 500.0f * Time.deltaTime * playerActions.Move.Y, Space.World);
+
+            transform.position = new Vector3(playerActions.Move.X, playerActions.Move.Y, 0);
             //playerActions.Fire.
             var fireColor = playerActions.Fire.IsPressed ? Color.red : Color.white;
 			var jumpColor = playerActions.Jump.IsPressed ? Color.green : Color.white;

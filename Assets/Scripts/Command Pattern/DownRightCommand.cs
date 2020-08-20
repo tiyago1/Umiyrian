@@ -12,6 +12,7 @@ public class DownRightCommand : MoveCommand
     public override void Execute()
     {
         base.Execute();
-        mPlayerController.transform.position -= new Vector3(-0.05f, 0.05f, 0.0f);
+        Vector2 newPosition = mPlayerController.GetPosition() + new Vector2(speed, -speed);
+        mPlayerController.rigidBody.MovePosition(newPosition);
     }
 }

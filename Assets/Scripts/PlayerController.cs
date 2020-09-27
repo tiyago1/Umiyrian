@@ -64,43 +64,45 @@ public class PlayerController : MonoBehaviour, IMoveable // Instance olabilir he
 
     private void Aim()
     {
-        Vector2 value = Vector2.zero;
         if (playerActions.Aim.LastInputType == BindingSourceType.MouseBindingSource)
-            value = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        {
+            MouseAim(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        }
         else
-            value = playerActions.Aim.Vector;
+        {
+            GamepadAim(new Vector2(this.transform.position.x, this.transform.position.y) + playerActions.Aim.Vector);
+        }
 
-        Test(value, CurrentWeaponController.gameObject, 1.0f);
-        Test(value, crosshair.gameObject, 2.6f);
-        LookAtGamepad();
+        SetupWeaponRotation();
     }
 
-    private void MouseAim()
+    private void MouseAim(Vector2 value)
     {
-
+        CurrentWeaponController.gameObject.transform.localPosition = GetAimVector(value, 1.0f);
+        crosshair.transform.position = value;
     }
 
-    private void GamepadAim()
+    private void GamepadAim(Vector2 value)
     {
-
+        CurrentWeaponController.gameObject.transform.localPosition = GetAimVector(value, 1.0f);
+        crosshair.gameObject.transform.localPosition = GetAimVector(value, 2.6f);
     }
 
-    private void Test(Vector3 mouseScreenPosition, GameObject gameObject, float range)
+    private Vector3 GetAimVector(Vector3 point, float range)
     {
-        Vector3 aim = new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, 0) - this.transform.position;
+        Vector3 aim = new Vector3(point.x, point.y, 0) - this.transform.position;
         aim.Normalize();
         aim *= range;
-        gameObject.transform.localPosition = aim;
+        return aim;
     }
 
-    private void LookAtGamepad()
+    private void SetupWeaponRotation()
     {
         Vector2 distance = crosshair.transform.position - CurrentWeaponController.transform.position;
         distance.Normalize();
         float angle = Mathf.Atan2(distance.y, distance.x) * Mathf.Rad2Deg;
-        CurrentWeaponController.gameObject.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        CurrentWeaponController.gameObject.transform.localRotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
-
 
     #region General Methods
 

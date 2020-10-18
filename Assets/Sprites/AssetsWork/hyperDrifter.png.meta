@@ -1,0 +1,2222 @@
+fileFormatVersion: 2
+guid: e6b79cb01cc6bf9449011b86988f6614
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -686153307364721243
+    second: hyperDrifter_0
+  - first:
+      213: -8442747928025742828
+    second: hyperDrifter_1
+  - first:
+      213: -3767979075533415645
+    second: hyperDrifter_2
+  - first:
+      213: -7170383816601903701
+    second: hyperDrifter_3
+  - first:
+      213: 271020496592279383
+    second: hyperDrifter_4
+  - first:
+      213: -7490073930076235266
+    second: hyperDrifter_5
+  - first:
+      213: -5647832423987542113
+    second: hyperDrifter_6
+  - first:
+      213: -6727297433690985392
+    second: hyperDrifter_7
+  - first:
+      213: 3714732404117515076
+    second: hyperDrifter_8
+  - first:
+      213: -3885054426961779272
+    second: hyperDrifter_9
+  - first:
+      213: -5313761129853261224
+    second: hyperDrifter_10
+  - first:
+      213: -2401975301699256276
+    second: hyperDrifter_11
+  - first:
+      213: 7381336705341495713
+    second: hyperDrifter_12
+  - first:
+      213: -1456867368628593537
+    second: hyperDrifter_13
+  - first:
+      213: 8436246442988905180
+    second: hyperDrifter_14
+  - first:
+      213: 6061893702106441646
+    second: hyperDrifter_15
+  - first:
+      213: 2455326503304470164
+    second: hyperDrifter_16
+  - first:
+      213: 7105463634085474531
+    second: hyperDrifter_17
+  - first:
+      213: 600460002415602402
+    second: hyperDrifter_18
+  - first:
+      213: 2283404305889289876
+    second: hyperDrifter_19
+  - first:
+      213: 1124667507370801204
+    second: hyperDrifter_20
+  - first:
+      213: -7030988249263655130
+    second: hyperDrifter_21
+  - first:
+      213: -854586544127050970
+    second: hyperDrifter_22
+  - first:
+      213: 8919976170069842751
+    second: hyperDrifter_23
+  - first:
+      213: -4828687011972608690
+    second: hyperDrifter_24
+  - first:
+      213: -3658152269409391715
+    second: hyperDrifter_25
+  - first:
+      213: -3922219994202082784
+    second: hyperDrifter_26
+  - first:
+      213: 6942515346899536361
+    second: hyperDrifter_27
+  - first:
+      213: 5272008198374689722
+    second: hyperDrifter_28
+  - first:
+      213: 6540541825116334677
+    second: hyperDrifter_29
+  - first:
+      213: -4346240029499153762
+    second: hyperDrifter_30
+  - first:
+      213: -7475858355254056743
+    second: hyperDrifter_31
+  - first:
+      213: 7165581938234952868
+    second: hyperDrifter_32
+  - first:
+      213: 3589127962014984443
+    second: hyperDrifter_33
+  - first:
+      213: 7698826924464854845
+    second: hyperDrifter_34
+  - first:
+      213: 4262663170028562096
+    second: hyperDrifter_35
+  - first:
+      213: 6959372205717675548
+    second: hyperDrifter_36
+  - first:
+      213: 1149244887623267288
+    second: hyperDrifter_37
+  - first:
+      213: -6585928341753208708
+    second: hyperDrifter_38
+  - first:
+      213: 4112380278488433817
+    second: hyperDrifter_39
+  - first:
+      213: 1034563180403898485
+    second: hyperDrifter_40
+  - first:
+      213: -1049754451075544911
+    second: hyperDrifter_41
+  - first:
+      213: 8099650621695094887
+    second: hyperDrifter_42
+  - first:
+      213: 5157241015599960212
+    second: hyperDrifter_43
+  - first:
+      213: -2125860177596916239
+    second: hyperDrifter_44
+  - first:
+      213: -4792386596752648580
+    second: hyperDrifter_45
+  - first:
+      213: -9074367197342357702
+    second: hyperDrifter_46
+  - first:
+      213: 3961058686433335831
+    second: hyperDrifter_47
+  - first:
+      213: -9170268131960817508
+    second: hyperDrifter_48
+  - first:
+      213: -8855067428766805838
+    second: 1
+  - first:
+      213: -1768139814890621436
+    second: hyperDrifter_50
+  - first:
+      213: 2667793037804008280
+    second: 3
+  - first:
+      213: -1140327396893325118
+    second: hyperDrifter_52
+  - first:
+      213: 3441747269555130899
+    second: 5
+  - first:
+      213: 2183189126184051546
+    second: 6
+  - first:
+      213: -8637000708680956800
+    second: 2
+  - first:
+      213: 6923322257470534968
+    second: 4
+  - first:
+      213: 8643545913781732506
+    second: hyperDrifter_57
+  - first:
+      213: -3984649708430051471
+    second: hyperDrifter_58
+  - first:
+      213: -5692180772557102972
+    second: hyperDrifter_59
+  - first:
+      213: 2730681767723128228
+    second: hyperDrifter_60
+  - first:
+      213: 6563059812338761308
+    second: hyperDrifter_61
+  - first:
+      213: -578093298678928791
+    second: hyperDrifter_62
+  - first:
+      213: 367344532404846614
+    second: hyperDrifter_63
+  - first:
+      213: -4611558856098885975
+    second: hyperDrifter_64
+  - first:
+      213: -993620835787586802
+    second: hyperDrifter_65
+  - first:
+      213: -2113063191785158141
+    second: hyperDrifter_66
+  - first:
+      213: -3581749432621396049
+    second: hyperDrifter_67
+  - first:
+      213: 6288325887017438434
+    second: hyperDrifter_68
+  - first:
+      213: -4202095065226546572
+    second: hyperDrifter_69
+  - first:
+      213: -4072174876735809950
+    second: hyperDrifter_70
+  - first:
+      213: -4246358553338166714
+    second: hyperDrifter_71
+  - first:
+      213: 6311987736794650180
+    second: hyperDrifter_72
+  - first:
+      213: -1067340099708439854
+    second: hyperDrifter_73
+  - first:
+      213: -8080089396262510362
+    second: hyperDrifter_74
+  - first:
+      213: 5090204135625839776
+    second: hyperDrifter_75
+  - first:
+      213: -5251870397411522211
+    second: hyperDrifter_76
+  - first:
+      213: -5266706903256017379
+    second: hyperDrifter_77
+  - first:
+      213: -4928991265656217971
+    second: hyperDrifter_78
+  - first:
+      213: 1964002136509750768
+    second: hyperDrifter_79
+  - first:
+      213: 4518144004552517484
+    second: hyperDrifter_80
+  - first:
+      213: 2810671854641079424
+    second: hyperDrifter_81
+  - first:
+      213: -5865947949472323303
+    second: hyperDrifter_82
+  - first:
+      213: -3862162372689880993
+    second: hyperDrifter_83
+  - first:
+      213: 4435077534254580095
+    second: hyperDrifter_84
+  - first:
+      213: 6826964762403666372
+    second: hyperDrifter_85
+  - first:
+      213: 6520741257712567010
+    second: hyperDrifter_86
+  - first:
+      213: -4344228363656267832
+    second: hyperDrifter_87
+  - first:
+      213: -1541450329660508185
+    second: hyperDrifter_88
+  - first:
+      213: -7762004648937514290
+    second: hyperDrifter_89
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hyperDrifter_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 960
+        width: 126
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5adf01dc33b4a76f0800000000000000
+      internalID: -686153307364721243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 960
+        width: 117
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4124cd5bd7555da80800000000000000
+      internalID: -8442747928025742828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 964
+        width: 135
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bd9b19ef275bbc0800000000000000
+      internalID: -3767979075533415645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_3
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 997
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baddb3cb8edad7c90800000000000000
+      internalID: -7170383816601903701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_4
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 960
+        width: 129
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7579b3aa4bbd2c300800000000000000
+      internalID: 271020496592279383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 876
+        width: 23
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef95468d179ed0890800000000000000
+      internalID: -7490073930076235266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_6
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 876
+        width: 44
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f970a49755ede91b0800000000000000
+      internalID: -5647832423987542113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_7
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 792
+        width: 23
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ca37670a6d3a2a0800000000000000
+      internalID: -6727297433690985392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_8
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 792
+        width: 23
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44bae07a0716d8330800000000000000
+      internalID: 3714732404117515076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_9
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 792
+        width: 24
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b562e32593851ac0800000000000000
+      internalID: -3885054426961779272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_10
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 792
+        width: 24
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a61d9e76ab146b0800000000000000
+      internalID: -5313761129853261224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_11
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 792
+        width: 25
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2044f670387aaed0800000000000000
+      internalID: -2401975301699256276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_12
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 792
+        width: 23
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a99e6120a6cf6660800000000000000
+      internalID: 7381336705341495713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 792
+        width: 23
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7cd808d8da28cbe0800000000000000
+      internalID: -1456867368628593537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_14
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 792
+        width: 25
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2a1085171931570800000000000000
+      internalID: 8436246442988905180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_15
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 792
+        width: 24
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea76b3c643c202450800000000000000
+      internalID: 6061893702106441646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_16
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 792
+        width: 25
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e90152272131220800000000000000
+      internalID: 2455326503304470164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_17
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 792
+        width: 23
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0fe12678dab9260800000000000000
+      internalID: 7105463634085474531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_18
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 792
+        width: 23
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eaefc9d033455800800000000000000
+      internalID: 600460002415602402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_19
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 792
+        width: 23
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496e0234e1840bf10800000000000000
+      internalID: 2283404305889289876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_20
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 725
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438b243a32f9b9f00800000000000000
+      internalID: 1124667507370801204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_21
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 725
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627b1b66079ec6e90800000000000000
+      internalID: -7030988249263655130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_22
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 725
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b7a7fd016e324f0800000000000000
+      internalID: -854586544127050970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_23
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 725
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b56fd011f1acb70800000000000000
+      internalID: 8919976170069842751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_24
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 725
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d84dffebe0dfcb0800000000000000
+      internalID: -4828687011972608690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_25
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 725
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b609784e1ab3dc0800000000000000
+      internalID: -3658152269409391715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_26
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 658
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02276a232b97199c0800000000000000
+      internalID: -3922219994202082784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_27
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 658
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e905abcce4c85060800000000000000
+      internalID: 6942515346899536361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_28
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 658
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb021d268fe92940800000000000000
+      internalID: 5272008198374689722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_29
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 658
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ae4acf22ca4ca50800000000000000
+      internalID: 6540541825116334677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_30
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 573
+        width: 56
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92ae1578bd0fa3c0800000000000000
+      internalID: -4346240029499153762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_31
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 573
+        width: 90
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d822f74f6a604890800000000000000
+      internalID: -7475858355254056743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_32
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 573
+        width: 90
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac0375dec2417360800000000000000
+      internalID: 7165581938234952868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_33
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 573
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8235d8dd42fc130800000000000000
+      internalID: 3589127962014984443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_34
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 571
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37d0f33c4ab7da60800000000000000
+      internalID: 7698826924464854845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_35
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 572
+        width: 88
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b661be8195082b30800000000000000
+      internalID: 4262663170028562096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_36
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 573
+        width: 66
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e57851628a49060800000000000000
+      internalID: 6959372205717675548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_37
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 573
+        width: 46
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3f7b6e220f2ff00800000000000000
+      internalID: 1149244887623267288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_38
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 494
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c706f9121151a94a0800000000000000
+      internalID: -6585928341753208708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_39
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 494
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99400a0331c121930800000000000000
+      internalID: 4112380278488433817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_40
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 494
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5783ca13bb18b5e00800000000000000
+      internalID: 1034563180403898485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_41
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 494
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8c14a73e58e61f0800000000000000
+      internalID: -1049754451075544911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_42
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 494
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76078ee935db76070800000000000000
+      internalID: 8099650621695094887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_43
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 494
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49019e32163329740800000000000000
+      internalID: 5157241015599960212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_44
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 494
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fddf288e6d6f72e0800000000000000
+      internalID: -2125860177596916239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_45
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 494
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76173a08c50e7db0800000000000000
+      internalID: -4792386596752648580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_46
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 494
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37a3f0bc1f511280800000000000000
+      internalID: -9074367197342357702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_47
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 494
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a955383e188f630800000000000000
+      internalID: 3961058686433335831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_48
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 427
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98f36b58b9acb080800000000000000
+      internalID: -9170268131960817508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 368
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b01936f61b7c1580800000000000000
+      internalID: -8855067428766805838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 368
+        width: 61
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853719022a7e50520800000000000000
+      internalID: 2667793037804008280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 368
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312118018ea83cf20800000000000000
+      internalID: 3441747269555130899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 6
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 368
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5322b771fe3c4e10800000000000000
+      internalID: 2183189126184051546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 368
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0844642cd95332880800000000000000
+      internalID: -8637000708680956800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 368
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835361e69e4941060800000000000000
+      internalID: 6923322257470534968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_57
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 284
+        width: 63
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a944dbe863b04f770800000000000000
+      internalID: 8643545913781732506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_58
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 284
+        width: 63
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177b9a6a33ea3b8c0800000000000000
+      internalID: -3984649708430051471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_59
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 209
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480ec6eeebf4101b0800000000000000
+      internalID: -5692180772557102972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_60
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 205
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5d5c7999455e520800000000000000
+      internalID: 2730681767723128228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_61
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 201
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ef712702ca41b50800000000000000
+      internalID: 6563059812338761308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_62
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 199
+        width: 89
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a653d25333af7f0800000000000000
+      internalID: -578093298678928791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_63
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 199
+        width: 45
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6104c2ce7e1191500800000000000000
+      internalID: 367344532404846614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_64
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 202
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae4b6947a37000c0800000000000000
+      internalID: -4611558856098885975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_65
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 200
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0344714d13f532f0800000000000000
+      internalID: -993620835787586802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_66
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 204
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a41b9f834eca2e0800000000000000
+      internalID: -2113063191785158141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_67
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 200
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf05223ed11b4ec0800000000000000
+      internalID: -3581749432621396049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_68
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 163
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec4197c31f944750800000000000000
+      internalID: 6288325887017438434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_69
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 164
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472ffb44dc82fa5c0800000000000000
+      internalID: -4202095065226546572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_70
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 164
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26654e0668abc77c0800000000000000
+      internalID: -4072174876735809950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_71
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 127
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6424657d467e115c0800000000000000
+      internalID: -4246358553338166714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_72
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 128
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446544e776fa89750800000000000000
+      internalID: 6311987736794650180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_73
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 128
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2395695db0031f0800000000000000
+      internalID: -1067340099708439854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_74
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 76
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e06f561181cddf80800000000000000
+      internalID: -8080089396262510362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_75
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 79
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4d33a31b904a640800000000000000
+      internalID: 5090204135625839776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_76
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 79
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5985ebf2bb9d17b0800000000000000
+      internalID: -5251870397411522211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_77
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 77
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16d357c9f5e8e6b0800000000000000
+      internalID: -5266706903256017379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_78
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 74
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ede8d0f84b89bb0800000000000000
+      internalID: -4928991265656217971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_79
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 71
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd95c49989814b10800000000000000
+      internalID: 1964002136509750768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_80
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 73
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67e963b80ca3be30800000000000000
+      internalID: 4518144004552517484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_81
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 75
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084e1140923810720800000000000000
+      internalID: 2810671854641079424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_82
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 30
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91965c84b67f79ea0800000000000000
+      internalID: -5865947949472323303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_83
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 33
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5890fed8c7d66ac0800000000000000
+      internalID: -3862162372689880993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_84
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 33
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f714f84f48f8c8d30800000000000000
+      internalID: 4435077534254580095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_85
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 31
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9fd25d7404ebe50800000000000000
+      internalID: 6826964762403666372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_86
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 28
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2013220a35e7a50800000000000000
+      internalID: 6520741257712567010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_87
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 25
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c77719e15336b3c0800000000000000
+      internalID: -4344228363656267832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_88
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 27
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e73da5971bab9ae0800000000000000
+      internalID: -1541450329660508185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyperDrifter_89
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 29
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca162b85e1d74490800000000000000
+      internalID: -7762004648937514290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: acff7cfe3b172be49b8cb5b21ae49d0a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

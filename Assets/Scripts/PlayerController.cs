@@ -1,4 +1,5 @@
-﻿using InControl;
+﻿using DG.Tweening;
+using InControl;
 using System.Collections;
 using System.Collections.Generic;
 using Umiyrian.Inputs;
@@ -15,12 +16,14 @@ public enum DirectionType
     Backward,
     DownRight,
 }
+
 public class PlayerController : MonoBehaviour, IMoveable // Instance olabilir heryere referance
 {
     public Animator Animator;
+    public SpriteRenderer SpriteRenderer;
     public DirectionType CurrentPlayerDirection;
     public WeaponController CurrentWeaponController;
-    public Rigidbody2D rigidBody;
+    public Rigidbody2D RigidBody;
 
     [Header("Move Commands")]
     private Dictionary<DirectionType, MoveCommand> mMoveCommands;
@@ -45,7 +48,6 @@ public class PlayerController : MonoBehaviour, IMoveable // Instance olabilir he
         //playerActions.Move.OnLastInputTypeChanged += ( lastInputType ) => Debug.Log( lastInputType );
     }
 
-
     void OnDisable()
     {
         // This properly disposes of the action set and unsubscribes it from
@@ -53,27 +55,12 @@ public class PlayerController : MonoBehaviour, IMoveable // Instance olabilir he
         playerActions.Destroy();
     }
 
-
     private void Update()
     {
         Move();
         Shoot();
         Aim();
         Dash();
-    }
-
-    private void Aim()
-    {
-        if (playerActions.Aim.LastInputType == BindingSourceType.MouseBindingSource)
-        {
-            MouseAim(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-        }
-        else
-        {
-            GamepadAim(new Vector2(this.transform.position.x, this.transform.position.y) + playerActions.Aim.Vector);
-        }
-
-        SetupWeaponRotation();
     }
 
     private void MouseAim(Vector2 value)
@@ -108,6 +95,9 @@ public class PlayerController : MonoBehaviour, IMoveable // Instance olabilir he
 
     private void Move()
     {
+        if (mDashCommand.isDashContinues)
+            return;
+
         if (playerActions.Move.IsPressed)
         {
             DirectionType direction = ConvertAngleToDirection(playerActions.Move.Angle);
@@ -118,10 +108,25 @@ public class PlayerController : MonoBehaviour, IMoveable // Instance olabilir he
             Animator.SetBool("isMove", false);
         }
     }
+
     public void Move(float angle)
     {
         DirectionType direction = ConvertAngleToDirection(playerActions.Move.Angle);
         mMoveCommands[direction].Execute();
+    }
+
+    private void Aim()
+    {
+        if (playerActions.Aim.LastInputType == BindingSourceType.MouseBindingSource)
+        {
+            MouseAim(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        }
+        else
+        {
+            GamepadAim(new Vector2(this.transform.position.x, this.transform.position.y) + playerActions.Aim.Vector);
+        }
+
+        SetupWeaponRotation();
     }
 
     private void Shoot()
@@ -133,8 +138,10 @@ public class PlayerController : MonoBehaviour, IMoveable // Instance olabilir he
 
     private void Dash()
     {
-        if (playerActions.Dash.IsPressed)
+        if (playerActions.Dash.WasPressed)
         {
+            Animator.SetBool("isMove", false);
+            Animator.SetBool("isDash", true);
             mDashCommand.Execute();
         }
     }

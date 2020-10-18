@@ -13,6 +13,6 @@ public class BackwardCommand : MoveCommand
     {
         base.Execute();
         Vector2 newPosition = mPlayerController.GetPosition() - new Vector2(0.0f, speed);
-        mPlayerController.rigidBody.MovePosition(newPosition);
+        mPlayerController.RigidBody.MovePosition(newPosition);
     }
 }

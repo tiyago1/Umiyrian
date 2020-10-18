@@ -13,6 +13,6 @@ public class LeftCommand : MoveCommand
     {
         base.Execute();
         Vector2 newPosition = mPlayerController.GetPosition() + new Vector2(-speed, 0);
-        mPlayerController.rigidBody.MovePosition(newPosition);
+        mPlayerController.RigidBody.MovePosition(newPosition);
     }
 }

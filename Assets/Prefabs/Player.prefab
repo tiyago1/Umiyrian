@@ -199,10 +199,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 3714345449892123148}
+  SpriteRenderer: {fileID: 3714345449892123151}
   CurrentPlayerDirection: 0
-  CurrentWeaponController: {fileID: 0}
-  rigidBody: {fileID: 0}
-  crosshair: {fileID: 0}
+  CurrentWeaponController: {fileID: 9182713590674450376}
+  RigidBody: {fileID: 0}
+  crosshair: {fileID: 5558351383535406778}
   incontrolInput: {fileID: 0}
 --- !u!1 &5558351383535406778
 GameObject:
@@ -360,3 +361,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8574048736888339986}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &9182713590674450376 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 689805823728212442, guid: 24dfffe825632a7418eaee53ced74001,
+    type: 3}
+  m_PrefabInstance: {fileID: 8574048736888339986}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24558a742a13fb141a0c9fe169e10707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
